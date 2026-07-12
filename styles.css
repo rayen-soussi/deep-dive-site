@@ -398,38 +398,20 @@ p{ margin: 0; color: var(--text-secondary); }
 .phone-frame{
   flex: none;
   width: 190px;
-  height: 390px;
-  border-radius: 34px;
-  border: 1px solid var(--border);
-  background: linear-gradient(180deg, var(--elevated), var(--card));
-  position: relative;
   scroll-snap-align: start;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-radius: 34px;
   overflow: hidden;
+  filter: drop-shadow(0 24px 48px rgba(0, 0, 0, 0.5));
 }
-.phone-frame::before{
-  content: '';
-  position: absolute;
-  top: 14px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 46px;
-  height: 6px;
-  border-radius: 4px;
-  background: var(--border);
-}
-.phone-frame .placeholder-text{
-  font-size: 12px;
-  color: var(--text-muted);
-  text-align: center;
-  padding: 0 20px;
+.phone-frame img{
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 @media (min-width: 720px){
   .screens-row{ overflow: visible; flex-wrap: wrap; justify-content: center; }
-  .phone-frame{ width: 210px; height: 430px; }
+  .phone-frame{ width: 220px; }
 }
 
 /* =========================================================
